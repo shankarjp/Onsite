@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+</head>
+
+<body>
+  <h1 align="center">Delta_Onsite_Task3</h1>
+  <div align="center">
+    <img src="https://delta.nitt.edu/images/deltaLogoGreen.png" style="width:150px;height:150px;" alt="Delta_logo">
+    <form method="POST">
+      <h3>Username</h3>
+      <input type="text"name="username" placeholder="Username" required="" autofocus="" />
+      <h3>Password</h3>
+      <input type="password" name="password" placeholder="Password" required="" />
+      <h6></h6>
+      <label>
+      <h6></h6>
+      <img src="{{url_for('static', filename=filename)}}" alt="Captcha">
+      <h3>Enter the captcha</h3>
+      <input type="text" name="captcha" placeholder="Captcha" required="" />
+      <h6></h6>
+      <button type="submit" name="button">Login</button>
+    </form>
+  </div>
+</body>
+
+</html>
