@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  
+  desktop_server:
+    container_name: desktop_server
+    build:
+      context: /home/daemondan/onsite/Task2/desktop
+      dockerfile: Dockerfile
+     
+  mobile_server:
+    container_name: mobile_server
+    build:
+      context: /home/daemondan/onsite/Task2/mobile
+      dockerfile: Dockerfile
