@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  
+  hotrestart:
+    container_name: hotrestart
+    build:
+      context: /home/daemondan/onsite/Task4
+      dockerfile: Dockerfile
