@@ -7,7 +7,7 @@ import os
 
 app=Flask(__name__)
 app.secret_key='1234'
-root_directory='/home/daemondan/onsite/Task3/'
+root_directory=os.getcwd()
 all_codes=[]
 
 def random_code():
@@ -31,8 +31,8 @@ def generate_captcha():
 	image = Image.new(mode='RGB', size=(100,50))
 	draw = ImageDraw.Draw(image)
 	draw.text((15,15), final_code, font=fnt)
-	image.save(root_directory+"static/"+filename)
-	return root_directory+"static/"+filename, final_code
+	image.save(root_directory+"/static/"+filename)
+	return root_directory+"/static/"+filename, final_code
 
 
 @app.route("/")
